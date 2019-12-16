@@ -22,31 +22,54 @@
     </div>
     <div class="HHSubNavOutDiv">
       <ul>
-        <li>
-          <a href="https://m.vmall.com/huawei">推荐</a>
+        <li v-for="(item,index) in list" :key="index">
+          <a :href="item.url">{{item.name}}</a>
         </li>
-        <li>
-          <a href="https://m.vmall.com/honor">华为新品</a>
-        </li>
-        <li>
-          <a href="https://m.vmall.com/honor">荣耀5G</a>
-        </li>
-        <li>
-          <a href="https://msale.vmall.com/hwmate.html">Mate30系列</a>
-        </li>
-        <li>
-          <a href="https://msale.vmall.com/home.html">数码惠</a>
-        </li>
-        <li>
-          <a href="https://msale.vmall.com/ptpdwap.html">拼团</a>
-        </li>
+        
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data () {
+    return {
+      list:[
+        {
+          id:1,
+          name:"推荐",
+          url:"https://m.vmall.com/huawei"
+        },
+        {
+          id:2,
+          name:"华为新品",
+          url:"https://m.vmall.com/honor"
+        },
+        {
+          id:3,
+          name:"荣耀5G",
+          url:"https://m.vmall.com/honor"
+        },
+        {
+          id:4,
+          name:"Mate30系列",
+          url:"https://msale.vmall.com/hwmate.html"
+        },
+        {
+          id:5,
+          name:"数码惠",
+          url:"https://msale.vmall.com/home.html"
+        },
+        {
+          id:6,
+          name:"拼团",
+          url:"https://msale.vmall.com/ptpdwap.html"
+        },
+      ]
+    }
+  }
+};
 </script>
 
 <style scoped>
