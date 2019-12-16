@@ -16,7 +16,7 @@
         </div>
         <div class="shortcut">
           <i class="iconfont icon-xinxi"></i>
-          <a>登录</a>
+          <span>登录</span>
         </div>
       </div>
     </div>

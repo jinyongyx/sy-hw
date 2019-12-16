@@ -113,12 +113,13 @@
     font-size: 30px;
     padding-left: 30px;
     color: black;
-    padding-right: 7px;
+    padding-right: 5px;
 }
 
-.shortcut>a {
+.shortcut>span {
     font-size: 15px;
     color: #4c4c4c;
+    margin-left: 5px;
 }
 .tab-bar>ul>li {
     list-style: none;
