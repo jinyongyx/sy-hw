@@ -14,7 +14,6 @@ const routes = [
         path:"/",
         component:SeachBar
     },
-   
     {
         path:"/Classify",
         component:Classify

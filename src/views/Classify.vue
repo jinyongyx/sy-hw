@@ -1,5 +1,7 @@
 <template>
-    <div>2222</div>
+<div>
+    222
+    </div>
 </template>
 <script>
 export default {

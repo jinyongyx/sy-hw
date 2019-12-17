@@ -25,49 +25,53 @@
         <li v-for="(item,index) in list" :key="index">
           <a :href="item.url">{{item.name}}</a>
         </li>
-        
       </ul>
     </div>
+    <com-pent></com-pent>
   </div>
-</template>
+</template> 
 
 <script>
+import Component from "./Content.vue";
 export default {
-  data () {
+  components: {
+    "com-pent": Component
+  },
+  data() {
     return {
-      list:[
+      list: [
         {
-          id:1,
-          name:"推荐",
-          url:"https://m.vmall.com/huawei"
+          id: 1,
+          name: "推荐",
+          url: "https://m.vmall.com/huawei"
         },
         {
-          id:2,
-          name:"华为新品",
-          url:"https://m.vmall.com/honor"
+          id: 2,
+          name: "华为新品",
+          url: "https://m.vmall.com/honor"
         },
         {
-          id:3,
-          name:"荣耀5G",
-          url:"https://m.vmall.com/honor"
+          id: 3,
+          name: "荣耀5G",
+          url: "https://m.vmall.com/honor"
         },
         {
-          id:4,
-          name:"Mate30系列",
-          url:"https://msale.vmall.com/hwmate.html"
+          id: 4,
+          name: "Mate30系列",
+          url: "https://msale.vmall.com/hwmate.html"
         },
         {
-          id:5,
-          name:"数码惠",
-          url:"https://msale.vmall.com/home.html"
+          id: 5,
+          name: "数码惠",
+          url: "https://msale.vmall.com/home.html"
         },
         {
-          id:6,
-          name:"拼团",
-          url:"https://msale.vmall.com/ptpdwap.html"
-        },
+          id: 6,
+          name: "拼团",
+          url: "https://msale.vmall.com/ptpdwap.html"
+        }
       ]
-    }
+    };
   }
 };
 </script>
