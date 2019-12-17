@@ -145,7 +145,7 @@ export default {
           this.number += 1;
         }
         this.startMove();
-      }, 2000); // 滚动不需要停顿则将2000改成动画持续时间
+      }, 2000)
     }
   }
 };
