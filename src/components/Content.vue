@@ -83,14 +83,30 @@
         </div>
       </div>
     </div>
+    <div class="bomont-endTime">
+      <EndTime :endTime='endTime'></EndTime>
+      <Imgswiper></Imgswiper>
+      <HwImg></HwImg>
+    </div>
   </div>
 </template>
 
 <script>
+import EndTime from "../views/EndTime.vue"
+import Imgswiper from "../views/ImgWeiper.vue"
+import HwImg from "../views/imgList/HwImg.vue"
+
 export default {
   name: "app",
+  components:{
+    EndTime,
+    Imgswiper,
+    HwImg,
+    // Catalog
+  },
   data() {
     return {
+      endTime : '2020-08-29 9:51:00',
       swiperOption: {
         //显示分页
         pagination: {
@@ -111,7 +127,6 @@ export default {
         //开启循环模式
         loop: true
       },
-
       textArr: [
         "MUI10新改变，给你一个清净的通知栏",
         "参与留言免费赢同程艺龙千元机票",
@@ -121,7 +136,8 @@ export default {
         "EMUI10新改变，给你一个清净的通知栏",
         "参与留言免费赢同程艺龙千元机票"
       ],
-      number: 0
+      number: 0,
+      
     };
   },
   computed: {
@@ -145,7 +161,7 @@ export default {
           this.number += 1;
         }
         this.startMove();
-      }, 2000)
+      }, 3000)
     }
   }
 };
@@ -158,5 +174,11 @@ export default {
   height: 150px;
   border-radius: 15px;
   margin-left: 8px;
+}
+
+.bomont-endTime {
+  width: 100%;
+  height: 160px;
+  background: #FAFAFA;
 }
 </style>
