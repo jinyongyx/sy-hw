@@ -73,7 +73,7 @@ export default {
 <style scoped>
 .item-endetime {
   width: 60%;
-  margin: 0 100px;
+  margin: 0 80px;
   position: relative;
 }
 .item-endetime div {

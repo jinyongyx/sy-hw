@@ -3,8 +3,6 @@ import App from './App.vue'
 import router from './router/index'
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
-
 import "./assets/css/style.css"
 import vueSwiper from 'vue-awesome-swiper'
 
