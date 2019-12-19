@@ -141,7 +141,7 @@ export default {
   height: 20px !important;
   background: #f0f0f0 !important;
   position: absolute;
-  top: 18px;
+  top: 15px;
   left: -5px;
   line-height: 20px;
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="ear">
         <div class="ear-one">
-            <p>笔记本</p>
+            <p>精品平板</p>
         </div>
         <div class="ear-two">
             <ul>
@@ -20,16 +20,16 @@
             </ul>
         </div>
         <SlideTwo></SlideTwo>
-        <EarOne></EarOne>
+        <EarTwo></EarTwo>
     </div>
 </template>
 <script>
 import SlideTwo from "./SlidTwo"
-import EarOne from "./EarOne"
+import EarTwo from "./EarTwo"
 export default {
     components:{
         SlideTwo,
-        EarOne
+        EarTwo
     },
     data () {
         return {

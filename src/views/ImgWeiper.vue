@@ -1,6 +1,7 @@
 <template>
   <div class="img-swiper">
     <ul>
+      
       <li v-for="(item,index) in list" :key="index">
         <div>
           <img
@@ -11,13 +12,13 @@
         </div>
         <span class="img-swiper-span">{{item.favorable}}</span>
       </li>
+ 
     </ul>
   </div>
 </template>
 <script>
 export default {
   name: "ImgSwiper",
-
   data() {
     return {
       list: [

@@ -1,7 +1,7 @@
 <template>
     <div class="ear">
         <div class="ear-one">
-            <p>笔记本</p>
+            <p>智能穿戴</p>
         </div>
         <div class="ear-two">
             <ul>
@@ -20,47 +20,47 @@
             </ul>
         </div>
         <SlideTwo></SlideTwo>
-        <EarOne></EarOne>
+        <EarThree></EarThree>
     </div>
 </template>
 <script>
 import SlideTwo from "./SlidTwo"
-import EarOne from "./EarOne"
+import EarThree from "./EarThree"
 export default {
     components:{
         SlideTwo,
-        EarOne
+        EarThree
     },
     data () {
         return {
             list:[
                 {
-                    img:"https://res1.vmallres.com/pimages//product/6901443292417/428_428_1555751874478mp.png",
-                    name:"HUAWEI MateBook 14",
-                    price:"￥5999",
+                    img:"https://res3.vmallres.com/pimages//wapFrontLocation/content/4GYlwTf1AlPqhOHhwHqz.jpg",
+                    name:"HUAWEI WATCH GT 2",
+                    price:"￥1388",
                     lodeprice:"",
-                    activity:"手机电脑一碰即传"
+                    activity:"强劲续航 独立音乐播放"
                 },
                 {
-                    img:"https://res1.vmallres.com/pimages//product/6901443360079/428_428_F8153CC7347BAB26F866B5345DBECA13F2E274CEBC4D15C5mp.png",
-                    name:"荣耀MagicBook 14",
-                    price:"￥3699",
-                    lodeprice:"￥3899",
-                    activity:"直降200+赠背包&鼠标"
+                    img:"https://res3.vmallres.com/pimages//wapFrontLocation/content/KmXaDRx2pPiKPo3SvcCB.jpg",
+                    name:"荣耀手表梦幻系列",
+                    price:"￥999",
+                    lodeprice:"￥1099",
+                    activity:"3期免息 到手价699起"
                 },
                 {
-                    img:"https://res1.vmallres.com/pimages//product/6901443274901/428_428_1544775471623mp.png",
-                    name:"HUAWEI MateBook 13",  
-                    price:"￥5999",
+                    img:"https://res3.vmallres.com/pimages//wapFrontLocation/content/mbybc0ibuTlA9bDFbD6O.jpg",
+                    name:"NFC智能刷卡",  
+                    price:"￥399",
                     lodeprice:"",
-                    activity:"2K全面屏笔记本"
+                    activity:"华为手环 4 Pro"
                 },
                 {
-                    img:"https://res1.vmallres.com/pimages//product/6901443330744/428_428_52F045B3A4ADEA60CD2CB0B1E1A203FE6A34A56891A300CDmp.png",
-                    name:"荣耀 MagicBook Pro",
-                    price:"￥4299",
-                    lodeprice:"￥4699",
-                    activity:"最高降400+赠好礼"
+                    img:"https://res3.vmallres.com/pimages//wapFrontLocation/content/e0qEkhIlOslRsJ6XB09N.jpg",
+                    name:"荣耀手表魔法系列",
+                    price:"￥699",
+                    lodeprice:"￥799",
+                    activity:"3期免息 到手价699起"
                 },
             ]
         }

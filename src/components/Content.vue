@@ -1,6 +1,7 @@
 <template>
   <div class="content-ba">
     <div class="container">
+      <a id="spps" href=""></a>
       <van-swipe :autoplay="3000" indicator-color="white">
          <van-swipe-item>
              <img class="img" src="https://res.vmallres.com/pimages//pages/picImages/tqAtLKSZOOvpHNTseJFe.jpg" alt />
@@ -101,8 +102,7 @@ export default {
   components:{
     EndTime,
     Imgswiper,
-    HwImg,
-    // Catalog
+    HwImg
   },
   data() {
     return {
@@ -139,6 +139,7 @@ export default {
       number: 0,
       
     };
+    
   },
   computed: {
     text() {
@@ -150,6 +151,7 @@ export default {
   },
   mounted() {
     this.startMove();
+
   },
   methods: {
     startMove() {
@@ -162,7 +164,7 @@ export default {
         }
         this.startMove();
       }, 3000)
-    }
+    },
   }
 };
 </script>

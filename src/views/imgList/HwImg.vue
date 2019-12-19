@@ -40,6 +40,7 @@
     <div class="aee">
 
     </div>
+    
     <Ear></Ear>
   </div>
 </template>
@@ -59,7 +60,8 @@ export default {
         Build,
         Slidoomont,
         Find,
-        Ear
+        Ear,
+
     },
     data () {
         return {
