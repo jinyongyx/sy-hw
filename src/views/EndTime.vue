@@ -20,7 +20,7 @@ export default {
       minute:"",
       second:"",
       countDownList: "00天00时00分00秒",
-      actEndTime: "2019-12-20 10:00:00"
+      actEndTime: "2020-1-20 10:00:00"
     };
   },
  

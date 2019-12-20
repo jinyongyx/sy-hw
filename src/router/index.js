@@ -30,7 +30,7 @@ const routes = [
     {
         path:"/shopping",
         component:shopping
-    },
+    }
 
 
 ]

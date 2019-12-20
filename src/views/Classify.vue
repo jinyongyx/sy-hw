@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="spps">
     <div class="classify">
       <div class="search-index">
         <div class="inpunt-container">
@@ -12,6 +12,9 @@
       </div>
     </div>
     <Fiy></Fiy>
+    <a href="#spps" class="abc">
+            <i class="iconfont icon-huidaodingbu1"></i>
+        </a>
   </div>
 </template>
 <script>
@@ -38,5 +41,23 @@ export default {
 .shortcut {
   margin-left: 160px;
   margin-top: 5px;
+}
+
+
+.abc {
+    position: fixed;
+    right: 10px;
+    bottom: 80px;
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abc>i {
+    font-size: 34px;
+    color: #9b9b9b;
 }
 </style>
