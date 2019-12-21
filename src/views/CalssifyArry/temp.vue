@@ -31,7 +31,7 @@
             <p></p>
         </div>
         <div class="ul-li">
-            <!-- <p class="p">{{date.arr[index].kind}}</p> -->
+            <!-- <p class="p">{{date.arr[index].kind1}}</p> -->
             <ul>
                 <li v-for="(item,index) in date.PadList" :key="index">
                     <img :src="item.iponImg" alt="">

@@ -6,6 +6,7 @@ import 'vant/lib/index.css';
 import "./assets/css/style.css"
 import vueSwiper from 'vue-awesome-swiper'
 
+
 Vue.use(vueSwiper)
 Vue.use(Vant)
 Vue.config.productionTip = false
