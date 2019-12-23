@@ -6,6 +6,7 @@ import Classify from '../views/Classify.vue'
 import Discavey from '../views/Discavey.vue'
 import My from '../views/My.vue'
 import shopping from '../views/shopping.vue'
+import Router from "../views/CalssifyArry/Router.vue"
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,10 @@ const routes = [
     {
         path:"/shopping",
         component:shopping
+    },
+    {
+        path:"/Router",
+        component:Router
     }
 
 

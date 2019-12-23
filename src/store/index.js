@@ -21,6 +21,7 @@ const store = new Vuex.Store({
             Axios.get("http://localhost:3001/finde.json", val).then((res) => {
                 let data = res.data
                 window.console.log(data)
+                window.console.log("111")
                 context.commit("getData", data)
             })
         }
