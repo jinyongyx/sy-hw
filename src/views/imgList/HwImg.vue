@@ -2,7 +2,7 @@
   <div class="hw-img">
       <div class="hw-img-one">
           <div class="img">
-              <img src="https://res.vmallres.com/pimages//pages/picImages/MMiRiuQmrjQkrQ1aFmfE.png" alt="">
+              <img src="https://res.vmallres.com/pimages//pages/picImages/MMiRiuQmrjQkrQ1aFmfE.png" alt="" >
           </div>
           <div class="twoImg">
               <div><img src="https://res.vmallres.com/pimages//pages/picImages/xtLHt61S64sDZDCDCyjA.jpg" alt=""></div>
@@ -103,7 +103,10 @@ export default {
                 },
             ]
         }
-    }
+    },
+
+
+    
 };
 </script>
 <style scoped>

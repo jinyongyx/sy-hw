@@ -1,18 +1,17 @@
 <template>
   <div class="Iphon">
     <ul>
-      <li v-for="(item,index) in list" :key="index">
+      <li v-for="(item,index) in list" :key="index" @click="ImgClick(item)">
         <div class="Iphon-div">
           <p>{{item.activty}}</p>
         </div>
-        <img
-          :src="item.img"
-          alt
-        />
+        <img :src="item.img" alt />
         <p class="p1">{{item.name}}</p>
         <p class="p2">
           {{item.price}}
-          <span style="text-decoration: line-through;font-size: 12px;color: #999999">{{item.lodPrice}}</span>
+          <span
+            style="text-decoration: line-through;font-size: 12px;color: #999999"
+          >{{item.lodPrice}}</span>
         </p>
       </li>
     </ul>
@@ -28,7 +27,7 @@ export default {
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/2jT753IeBsCTOJ7Qqngj.jpg",
           name: "HUAWEI nova 5 Pro",
           price: "￥2699",
-          lodPrice:"",
+          lodPrice: "",
           activty: "4800万AI四摄"
         },
         {
@@ -36,7 +35,7 @@ export default {
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/c2g7OGsVaqREjHkU3rh2.jpg",
           name: "荣耀20青春版",
           price: "1099",
-          lodPrice:"1399",
+          lodPrice: "1399",
           activty: "最高优惠300"
         },
         {
@@ -44,7 +43,7 @@ export default {
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/4DYVvuQTkeQHlxa1NGzg.jpg",
           name: "华为畅享10 Plus ",
           price: "￥1399",
-          lodPrice:"",
+          lodPrice: "",
           activty: "购机赠耳机"
         },
         {
@@ -52,11 +51,19 @@ export default {
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/h6OXsIBJCoz1hVaVPSPj.jpg",
           name: "荣耀Note10",
           price: "￥1599",
-          lodPrice:"¥1999",
+          lodPrice: "¥1999",
           activty: "省600元赠配件到手1399起"
         }
       ]
     };
+  },
+
+  methods: {
+    ImgClick(item) {
+      this.$router.push({ path: "Commodity", query: { price: item.price,
+                                                      name:item.name,
+                                                      img:item.img } });
+    }
   }
 };
 </script>

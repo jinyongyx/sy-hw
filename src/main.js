@@ -5,6 +5,9 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import "./assets/css/style.css"
 import vueSwiper from 'vue-awesome-swiper'
+import store from "./store/index"
+
+
 
 
 Vue.use(vueSwiper)
@@ -13,5 +16,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store:store,
   render: h => h(App),
 }).$mount('#app')
