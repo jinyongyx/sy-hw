@@ -81,27 +81,27 @@
       </div>
       
     <van-goods-action>
-      <van-goods-action-icon icon="chat-o" text="首页" @click="onClickIcon" />
-      <van-goods-action-icon icon="chat-o" text="客服" @click="onClickIcon" />
-      <van-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
-      <!-- {{cont}} -->
-      <van-goods-action-button type="warning" text="加入购物车" @click="onClickButton" />
-      <van-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
-    </van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" />
+  <van-goods-action-icon icon="cart-o" text="购物车" :info="cont" />
+  <van-goods-action-icon icon="shop-o" text="店铺" />
+  <van-goods-action-button type="warning" text="加入购物车" @click="addShopping"/>
+  <van-goods-action-button type="danger" text="立即购买" />
+</van-goods-action>
   </div>
 </template>
 
 <script>
 export default {
-  // data () {
-  //   return {
-  //     cont:0  
-  //   }
-  // },
+  data () {
+  return {
+    cont:0  
+  }
+},
   methods: {
-    onClickIcon() {
+    addShopping() {
       // Toast('点击图标');
-
+      this.cont=this.cont+1
+     localStorage.setItem('Shopping', this.cont)
     },
     onClickButton() {
       // Toast('点击按钮')
