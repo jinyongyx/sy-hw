@@ -2,15 +2,15 @@
   <div class="Commodity">
     <div class="swiper">
       <img
-        :src="this.$route.query.img"
+        :src="this.$store.state.obj.img"
         alt
       />
     </div>
       <p class="abc">
-       {{this.$route.query.price}}
+       {{this.$store.state.obj.price}}
       </p>
       <p class="aaa">
-        {{this.$route.query.name}}
+        {{this.$store.state.obj.name}}
       </p>
       <p class="bbb">
         ①享12期分期免息 ②晒图抽千份自拍杆 ③华为老用户购机赠半年延保 点此购买>>
@@ -60,10 +60,8 @@
           <span class="yanse">颜色</span>
           </div>
           <div class="kkk">
-
             <div class="shnglin1"><span>全网通 8GB+128GB</span></div>
             <div class="shnglin"><span>全网通 8GB+256GB</span></div>
-
           </div>
       </div>
 
@@ -79,10 +77,13 @@
 
           </div>
       </div>
+
+      <div>
+      </div>
       
     <van-goods-action>
   <van-goods-action-icon icon="chat-o" text="客服" />
-  <van-goods-action-icon icon="cart-o" text="购物车" :info="cont" />
+  <van-goods-action-icon icon="cart-o" text="购物车" :info="cont" @click="Cart" />
   <van-goods-action-icon icon="shop-o" text="店铺" />
   <van-goods-action-button type="warning" text="加入购物车" @click="addShopping"/>
   <van-goods-action-button type="danger" text="立即购买" />
@@ -102,6 +103,10 @@ export default {
       // Toast('点击图标');
       this.cont=this.cont+1
      localStorage.setItem('Shopping', this.cont)
+
+    },
+    Cart(){
+     this.$router.push({path:"ShopCart"})
     },
     onClickButton() {
       // Toast('点击按钮')

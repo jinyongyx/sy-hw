@@ -12,7 +12,7 @@
       </div>
       <div class="contner">
           <input type="password" placeholder="密码" v-model="message2">
-          <p>{{mistake}}</p>
+          <p class="mistake">{{mistake}}</p>
       </div>
       <div class="span">
           <span>短息验证码登录</span>
@@ -58,13 +58,15 @@ export default {
         if(this.$store.state.userinformation.username == this.message1 && this.$store.state.userinformation.passworld == this.message2){
             this.$router.push({ path: "/Logon"})
             window.console.log("11")
+        }else{
+            this.mistake = "账号密码不符合！"
         }
         }
     }
 }
 </script>
 
-<style>
+<style scoped>
 .router {
     width: 100%;
 }
@@ -202,6 +204,13 @@ color: #E03B5B;
     margin-top: 20px;
     font-size: 14px;
     color: #007dff;
+}
+
+.mistake {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: red;
 }
 
 </style>    

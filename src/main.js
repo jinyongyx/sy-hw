@@ -6,7 +6,12 @@ import 'vant/lib/index.css';
 import "./assets/css/style.css"
 import vueSwiper from 'vue-awesome-swiper'
 import store from "./store/index"
+import 'vue-search-bar/dist/vue-search-bar.min.css';
 
+import { SearchBar } from 'vue-search-bar';
+
+
+Vue.use(SearchBar);
 
 
 

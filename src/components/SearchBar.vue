@@ -9,7 +9,7 @@
           />
         </div>
         <div class="search-index">
-          <div class="inpunt-container">
+          <div class="inpunt-container" @click="inpuCli">
             <input type="text" placeholder="荣耀20" />
             <i class="iconfont icon-sousuo1"></i>
           </div>
@@ -72,6 +72,12 @@ export default {
         }
       ]
     };
+  },
+
+  methods:{
+    inpuCli(){
+      this.$router.push({path:"Input"})
+    }
   }
 };
 </script>

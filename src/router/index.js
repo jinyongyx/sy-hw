@@ -9,6 +9,8 @@ import shopping from '../views/shopping.vue'
 import Router from "../views/CalssifyArry/Router.vue"
 import Logon from "../views/Logon.vue"
 import Commodity from "../views/CalssifyArry/Commodity.vue"
+import ShopCart from "../views/CalssifyArry/ShopCart.vue"
+import Input from "../views/CalssifyArry/Ipunt.vue"
 
 Vue.use(VueRouter)
 
@@ -63,6 +65,14 @@ const routes = [
     {
         path:"/Commodity",
         component:Commodity
+    },
+    {
+        path:"/ShopCart",
+        component:ShopCart
+    },
+    {
+        path:"/Input",
+        component:Input
     }
 
 
