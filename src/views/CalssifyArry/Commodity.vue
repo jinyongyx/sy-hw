@@ -2,21 +2,20 @@
   <div class="Commodity">
     <div class="swiper">
       <img
-        :src="this.$store.state.obj.img"
+        :src="img"
         alt
       />
     </div>
       <p class="abc">
-       {{this.$store.state.obj.price}}
+       {{price}}
       </p>
       <p class="aaa">
-        {{this.$store.state.obj.name}}
+        {{name}}
       </p>
       <p class="bbb">
         ①享12期分期免息 ②晒图抽千份自拍杆 ③华为老用户购机赠半年延保 点此购买>>
       </p>
       <div class="xian">
-      
       </div>
 
       <div class="chuxiao">
@@ -95,15 +94,32 @@
 export default {
   data () {
   return {
-    cont:0  
+    cont:0,
+    img:this.$store.state.obj.img,
+    price:this.$store.state.obj.price,
+    name:this.$store.state.obj.name
   }
 },
   methods: {
     addShopping() {
       // Toast('点击图标');
-      this.cont=this.cont+1
-     localStorage.setItem('Shopping', this.cont)
-
+        var arr = JSON.parse(localStorage.getItem('newList')) || []
+        window.console.log(typeof  arr)
+        if(arr.length){
+            arr.map(item=>{
+                if(item.img === this.img){
+                    item.num++
+                }
+            })
+        }else{
+          arr.push(this.$store.state.obj)
+        }
+      window.localStorage.setItem('newList',JSON.stringify(arr))
+      this.cont=arr.length
+      // this.$store.commit("addShopping")
+      // this.$store.
+    this.$store.state.newlist.push(this.$store.state.obj)
+    this.$store.commit("addShopping")
     },
     Cart(){
      this.$router.push({path:"ShopCart"})
@@ -111,7 +127,11 @@ export default {
     onClickButton() {
       // Toast('点击按钮')
     }
-  }
+  },
+    mounted(){
+        var arr = JSON.parse(localStorage.getItem('newList')) || []
+        this.cont=arr.length
+    }
 };
 </script>
 

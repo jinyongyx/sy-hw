@@ -45,10 +45,9 @@
       </div>
 
       <div>
-          <ul v-for="(item, index) in pushData" :key="index">
-        <li>
+          <ul>
+        <li v-for="(item, index) in pushData" :key="index">
           <span>{{item}}</span>
-          
         </li>
       </ul>
       </div>
@@ -113,9 +112,9 @@ export default {
       }
     }
   },
-  mounted(){
-      this.pushData = localStorage.getItem("pushData")
-  }
+  // mounted(){
+  //     this.pushData = localStorage.getItem("pushData")
+  // }
 };
 </script>
 

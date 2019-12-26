@@ -11,6 +11,8 @@ const store = new Vuex.Store({
            passworld:"123"
        },
        obj:{},
+       gouListObj:{},
+       newlist:[],
        list: [
         {
           img:
@@ -18,7 +20,9 @@ const store = new Vuex.Store({
           name: "HUAWEI nova 5 Pro",
           price: "￥2699",
           lodPrice: "",
-          activty: "4800万AI四摄"
+          activty: "4800万AI四摄",
+        num:0,
+            checked:false
         },
         {
           img:
@@ -26,7 +30,9 @@ const store = new Vuex.Store({
           name: "荣耀20青春版",
           price: "1099",
           lodPrice: "1399",
-          activty: "最高优惠300"
+          activty: "最高优惠300",
+            num:0,
+            checked:false
         },
         {
           img:
@@ -34,7 +40,9 @@ const store = new Vuex.Store({
           name: "华为畅享10 Plus ",
           price: "￥1399",
           lodPrice: "",
-          activty: "购机赠耳机"
+          activty: "购机赠耳机",
+            num:0,
+            checked:false
         },
         {
           img:
@@ -42,7 +50,9 @@ const store = new Vuex.Store({
           name: "荣耀Note10",
           price: "￥1599",
           lodPrice: "¥1999",
-          activty: "省600元赠配件到手1399起"
+          activty: "省600元赠配件到手1399起",
+            num:0,
+            checked:false
         }
       ]
     },
@@ -53,10 +63,17 @@ const store = new Vuex.Store({
         //     window.console.log(state.newList)
         // },
         // login(){
-
         // }
         ImgClick(state,index){
             state.obj = state.list[index]
+            // window.console.log(state.obj)
+        },
+
+        addShopping(state,index){
+          state.gouListObj = state.list[index]
+          // window.console.log(state.gouListObj)
+          window.console.log(state.newlist)
+          
         }
     },
     // actions:{

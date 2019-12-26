@@ -8,26 +8,23 @@
     </div>
 
     <div class="contener">
-      <div class="big">
+      <div class="big" v-for="(item,index) in list" :key="index">
         <div class="contener-warp">
-          <input type="checkbox" />
-          <img
-            src="https://res.vmallres.com/pimages/product/6901443316168/428_428_1561435068797mp.png"
-            alt
-          />
+          <input type="checkbox" :checked="item.checked" @click="show(index)" />
+          <img :src="img" alt />
           <div class="div-p">
-            <p class="p1">HUAWEI nova 5 Pro 4800万AI四摄 人像超级夜景</p>
+            <p class="p1">{{name}}</p>
             <p class="p2">绮境森林,全网通 8GB+128GB,官方标配</p>
             <div class="fenqi">分期免息</div>
           </div>
         </div>
         <div class="warp">
           <div class="warp-i">
-            <span class="price">￥2699</span>
+            <span class="price">{{price}}</span>
             <span class="spanaa">
-              <i class="iconfont icon-jiajian1"></i>
-              <span>5</span>
-              <i class="iconfont icon-jiajian"></i>
+              <i class="iconfont icon-jiajian1" @click="jian(index)"></i>
+              <span>{{item.num}}</span>
+              <i class="iconfont icon-jiajian" @click="jia(index)"></i>
             </span>
           </div>
         </div>
@@ -119,37 +116,121 @@
           </ul>
         </div>
       </div>
-
     </div>
 
-    <div class="Cart-bottom">
-      <van-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
-        <van-checkbox v-model="checked">全选</van-checkbox>
-        <span slot="tip">
-          你的收货地址不支持同城送,
-          <span>修改地址</span>
-        </span>
-      </van-submit-bar>
+    <div style="z-index: 9999;position: fixed;bottom: 0;" class="numOne">
+      <div class="input-quanxuan">
+        <input type="checkbox" @click="allcheck" :checked="allCheck" />
+        全选
+      </div>
+      
+    <div class="heji">
+      <div>合计:{{total}}</div>
+
+      <div class="jiesuan">
+        <span>结算</span>
+      </div>
+    </div>
+
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    data () {
-        return {
-            checked:""      
-        }
+  data() {
+    return {
+      // cont:0,
+      list: JSON.parse(localStorage.getItem("newList")),
+      checked: "",
+      img: this.$store.state.obj.img,
+      price: this.$store.state.obj.price,
+      name: this.$store.state.obj.name
+    };
+  },
+  computed: {
+    total() {
+      var total1 = 0;
+      this.list.map(item => {
+        total1 += item.num * item.lodPrice;
+      });
+      return total1;
     },
-    methods:{
-        onSubmit(){
-            window.console.log("11")
-        }
+    allCheck() {
+      var state = null;
+      state = this.list.every(item => {
+        return item.checked === true;
+      });
+      window.console.log(state);
+      return state;
     }
+  },
+  methods: {
+    onSubmit() {
+      window.console.log("11");
+    },
+    show(index) {
+      this.list[index].checked = !this.list[index].checked;
+    },
+    allcheck() {
+      var state = this.list.some(item => item.checked === false);
+      window.console.log(state);
+      if (!state) {
+        this.list.map(item => {
+          item.checked = false;
+        });
+      } else {
+        this.list.map(item => {
+          item.checked = true;
+        });
+      }
+      window.console.log(this.list);
+    },
+    jian(index) {
+      window.console.log(index);
+      // window.console.log("减")
+      if (this.cont <= 0) {
+        return (this.cont = 0);
+      } else {
+        this.list[index].num--;
+        window.console.log(this.list[index].num);
+      }
+    },
+    jia(index) {
+      // window.console.log("加")
+      window.console.log(index);
+      window.console.log(this.list);
+      this.list[index].num++;
+      window.console.log(this.list[index].num);
+    }
+  }
 };
 </script>
 
 <style scoped>
+.input-quanxuan {
+  margin-left: 10px;
+}
+.jiesuan {
+  padding: 10px 30px 10px 30px;
+  background: #e04b53;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.heji {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.numOne {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
 .big {
   border-radius: 10px;
   background: #fff;
