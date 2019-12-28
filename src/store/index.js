@@ -22,7 +22,7 @@ const store = new Vuex.Store({
           price: "￥2699",
           lodPrice: "2699",
           activty: "4800万AI四摄",
-            num:0,
+            num:1,
             id:1,
             checked:false
         },
@@ -31,9 +31,9 @@ const store = new Vuex.Store({
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/c2g7OGsVaqREjHkU3rh2.jpg",
           name: "荣耀20青春版",
           price: "1099",
-          lodPrice: "1399",
+          lodPrice: "1099",
           activty: "最高优惠300",
-            num:0,
+            num:1,
             id:2,
             checked:false
         },
@@ -44,7 +44,7 @@ const store = new Vuex.Store({
           price: "￥1399",
           lodPrice: "1399",
           activty: "购机赠耳机",
-            num:0,
+            num:1,
             id:3,
             checked:false
         },
@@ -53,9 +53,9 @@ const store = new Vuex.Store({
             "https://res0.vmallres.com/pimages//wapFrontLocation/content/h6OXsIBJCoz1hVaVPSPj.jpg",
           name: "荣耀Note10",
           price: "￥1599",
-          lodPrice: "¥1999",
+          lodPrice: "1599",
           activty: "省600元赠配件到手1399起",
-            num:0,
+            num:1,
             id:4,
             checked:false
         }
