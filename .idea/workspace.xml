@@ -44,10 +44,17 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ShopCart.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/ShopCart.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="155">
+=======
+      <file leaf-file-name="ShopCart.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/ShopCart.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3949">
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
               <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -63,11 +70,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Commodity.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/Commodity.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1944">
               <caret line="105" column="61" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="61" />
+=======
+      <file leaf-file-name="Commodity.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/Commodity.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="120" column="57" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
             </state>
           </provider>
         </entry>
@@ -113,10 +128,17 @@
     <findStrings>
       <find>list</find>
       <find>jia</find>
+<<<<<<< HEAD
       <find>合计</find>
       <find>addShopping</find>
       <find>van-submit-bar__text</find>
       <find>show</find>
+=======
+      <find>addShopping</find>
+      <find>van-submit-bar__text</find>
+      <find>show</find>
+      <find>合计</find>
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,9 +147,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/views/CalssifyArry/Commodity.vue" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/views/CalssifyArry/ShopCart.vue" />
+=======
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/views/CalssifyArry/ShopCart.vue" />
+        <option value="$PROJECT_DIR$/src/views/CalssifyArry/Commodity.vue" />
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
       </list>
     </option>
   </component>
@@ -147,7 +175,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
     <option name="x" value="206" />
     <option name="y" value="189" />
     <option name="width" value="1440" />
@@ -254,22 +286,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577346083643</updated>
+<<<<<<< HEAD
       <workItem from="1577346087010" duration="3721000" />
+=======
+      <workItem from="1577346087010" duration="5291000" />
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3721000" />
+=======
+    <option name="totallyTimeSpent" value="5291000" />
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973601" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32996634" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1219641" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -358,6 +406,7 @@
     <entry file="file://$PROJECT_DIR$/src/views/Datalis.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/SearchBar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-432">
@@ -372,6 +421,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -384,7 +435,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/ShopCart.vue">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="155">
+=======
+        <state relative-caret-position="-3949">
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
           <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -392,5 +447,22 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/CalssifyArry/Commodity.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="120" column="57" selection-start-line="120" selection-start-column="57" selection-end-line="120" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
   </component>
 </project>

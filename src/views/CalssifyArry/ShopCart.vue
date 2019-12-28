@@ -282,9 +282,7 @@ export default {
   align-items: center;
 }
 
-.erji i {
-  /* font-size: 24px; */
-}
+
 .Cart {
   width: 100%;
   display: flex;
@@ -394,8 +392,7 @@ export default {
   margin-right: 10px;
 }
 
-.contener-warp {
-}
+
 .agin {
   width: 95%;
   background: #fff;
