@@ -1,31 +1,12 @@
 <template>
   <div class="Commodity">
     <div class="swiper">
-<<<<<<< HEAD
       <img :src="img" alt />
     </div>
     <p class="abc">{{price}}</p>
     <p class="aaa">{{name}}</p>
     <p class="bbb">①享12期分期免息 ②晒图抽千份自拍杆 ③华为老用户购机赠半年延保 点此购买>></p>
     <div class="xian"></div>
-=======
-      <img
-        :src="img"
-        alt
-      />
-    </div>
-      <p class="abc">
-       {{price}}
-      </p>
-      <p class="aaa">
-        {{name}}
-      </p>
-      <p class="bbb">
-        ①享12期分期免息 ②晒图抽千份自拍杆 ③华为老用户购机赠半年延保 点此购买>>
-      </p>
-      <div class="xian">
-      </div>
->>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
 
     <div class="chuxiao">
       <div class="sss">促销</div>
@@ -118,7 +99,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
   data() {
     return {
       cont: 0,
@@ -193,36 +173,6 @@ export default {
     //     this.$store.state.buy =[]
     //   }
     //  window.console.log(this.$store.state.buy)
-=======
-  data () {
-  return {
-    cont:0,
-    img:this.$store.state.obj.img,
-    price:this.$store.state.obj.price,
-    name:this.$store.state.obj.name
-  }
-},
-  methods: {
-    addShopping() {
-      // Toast('点击图标');
-        var arr = JSON.parse(localStorage.getItem('newList')) || []
-        window.console.log(typeof  arr)
-        if(arr.length){
-            arr.map(item=>{
-                if(item.img === this.img){
-                    item.num++
-                }
-            })
-        }else{
-          arr.push(this.$store.state.obj)
-        }
-      window.localStorage.setItem('newList',JSON.stringify(arr))
-      this.cont=arr.length
-      // this.$store.commit("addShopping")
-      // this.$store.
-    this.$store.state.newlist.push(this.$store.state.obj)
-    this.$store.commit("addShopping")
->>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
     },
     Cart() {
       this.$router.push({ path: "ShopCart" });
@@ -231,17 +181,10 @@ export default {
       // Toast('点击按钮')
     }
   },
-<<<<<<< HEAD
   mounted() {
     var arr = JSON.parse(localStorage.getItem("newList")) || [];
     this.cont = arr.length;
   }
-=======
-    mounted(){
-        var arr = JSON.parse(localStorage.getItem('newList')) || []
-        this.cont=arr.length
-    }
->>>>>>> b99d8e7c7e06586a69fd73c1699e8fa18997f2f0
 };
 </script>
 
