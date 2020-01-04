@@ -158,7 +158,6 @@ export default {
       this.buy.map(item => {
         total1 += item.num * item.lodPrice;
         // total1 += Number(item.num * item.lodPrice);
-        // total1 +=parseInt((item.num * item.lodPrice)/2) 
         window.console.log(item.num)
         window.console.log(item.lodPrice)
 
