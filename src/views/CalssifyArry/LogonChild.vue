@@ -13,8 +13,9 @@
     </div>
     <div class="myChild-contener">
       <div class="icon-a">
-        <i class="iconfont icon-xinxi"></i>
-        <i class="iconfont icon-shezhi"></i>
+          <i class="iconfont icon-arrow-left" @click="icofont"></i>
+          <i class="iconfont icon-xinxi"></i>
+          <i class="iconfont icon-shezhi"></i>
       </div>
       <div class="logIn">
         <img
@@ -194,6 +195,10 @@ export default {
           document.querySelector(".icon").style.display = "none";
         }
       };
+    },
+
+    icofont(){
+      this.$router.push({path:"/"})
     }
   }
 };
@@ -400,6 +405,7 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   color: #fff;
+  position: relative;
 }
 .icon-b {
   width: 100%;
@@ -445,5 +451,10 @@ export default {
 .router {
     color: #fff;
 }
-
+.icon-arrow-left {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  font-size: 24px;
+}
 </style>
